@@ -13,7 +13,7 @@ def create_repo():
 
 def create_readme():
     os.system("touch README.md")
-    os.system("echo {'# ' + repo_name} >> README.md")
+    os.system("echo ""# " + repo_name" >> README.md")
     os.system("git add README.md")
 
 def add_files():
