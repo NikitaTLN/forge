@@ -27,6 +27,7 @@ It helps you initialize a project, create a README file, and push everything to 
 ```bash
 git clone https://github.com/NikitaTLN/forge.git
 cd forge
+mkdir -p ~/.local/bin
 mv forge.py ~/.local/bin/
 cd ..
 rm -rf forge/
