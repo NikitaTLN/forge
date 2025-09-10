@@ -5,8 +5,10 @@ readme = input("Do you want to create a README file? (y/n): ").lower() == 'y'
 repo_url = input("Enter the repository url: ")
 repo_name = input("Enter the repository name: ")
 include_files = input("Do you want to include all the files (git add .)? (y/n) ").lower() == 'y'
+path = input("Enter the path where you want to create the repository (default is current directory): ")
 
 def create_repo():
+    os.system("cd " + path)
     os.system("git init")
     os.system("git branch -M main")
     os.system("git remote add origin " + repo_url)
