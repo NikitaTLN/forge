@@ -8,7 +8,10 @@ include_files = input("Do you want to include all the files (git add .)? (y/n) "
 path = input("Enter the path where you want to create the repository (default is current directory): ")
 
 def create_repo():
-    os.system("cd " + path)
+    if path == "":
+        return
+    else:
+        os.system("cd " + path)
     os.system("git init")
     os.system("git branch -M main")
     os.system("git remote add origin " + repo_url)
