@@ -27,11 +27,11 @@ It helps you initialize a project, create a README file, and push everything to 
 ```bash
 git clone https://github.com/NikitaTLN/forge.git
 cd forge
-mkdir -p ~/.local/bin
-mv forge.py ~/.local/bin/
+mkdir -p ~/.local/scripts
+mv forge.py ~/.local/scripts/
 cd ..
 rm -rf forge/
-cd ~/.local/bin/
+cd ~/.local/scripts/
 python3 forge.py
 ```
 
@@ -39,25 +39,25 @@ python3 forge.py
 ## Zsh:
 
 ```bash
-echo "bindkey -s 'YOURKEY' 'python3 ~/.local/bin/forge.py \n'" >> ~/.zshrc
+echo "bindkey -s 'YOURKEY' 'python3 ~/.local/scripts/forge.py \n'" >> ~/.zshrc
 ```
 
 ### for example:
 
 ```bash
-echo "bindkey -s '^g' 'python3 ~/.local/bin/forge.py \n'" >> ~/.zshrc
+echo "bindkey -s '^g' 'python3 ~/.local/scripts/forge.py \n'" >> ~/.zshrc
 # bind ctrl+g to run dive
 ```
 
 ## Bash:
 
 ```bash
-echo "bind -x '"YOURKEY":"python3 ~/.local/bin/forge.py"'" >> ~/.bashrc
+echo "bind -x '"YOURKEY":"python3 ~/.local/scripts/forge.py"'" >> ~/.bashrc
 ```
 
 ### for example:
 
 ```bash
-echo "bind -x '"\C-g":"python3 ~/.local/bin/forge.py"'" >> ~/.bashrc
+echo "bind -x '"\C-g":"python3 ~/.local/scripts/forge.py"'" >> ~/.bashrc
 # bind ctrl+g to run dive
 ```
